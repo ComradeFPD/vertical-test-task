@@ -6,7 +6,7 @@ use yii\base\Model;
 use yii\base\InvalidParamException;
 
 /**
- * Password reset form
+ * Форма сброса пароля
  */
 class ResetPasswordForm extends Model
 {
@@ -19,11 +19,11 @@ class ResetPasswordForm extends Model
     private $_user;
 
     /**
-     * Creates a form model given a token.
+     * Создание модели с заданым токеном
      *
      * @param string $token
      * @param array $config name-value pairs that will be used to initialize the object properties
-     * @throws \yii\base\InvalidParamException if token is empty or not valid
+     * @throws \yii\base\InvalidParamException Если токен пустой или некорректный
      */
     public function __construct($token, $config = [])
     {
@@ -53,9 +53,9 @@ class ResetPasswordForm extends Model
     }
 
     /**
-     * Resets password.
+     * Сбрасываем пароль
      *
-     * @return bool if password was reset.
+     * @return bool возвращаем в случае успеха
      */
     public function resetPassword()
     {

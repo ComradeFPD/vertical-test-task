@@ -6,7 +6,7 @@ use Yii;
 use yii\base\Model;
 
 /**
- * Password reset request form
+ * Запрос сброса пароля
  */
 class PasswordResetRequestForm extends Model
 {
@@ -30,9 +30,9 @@ class PasswordResetRequestForm extends Model
     }
 
     /**
-     * Sends an email with a link, for resetting the password.
+     * Отсылка эмейла которое содержит ссылку для сброса
      *
-     * @return bool whether the email was send
+     * @return bool
      */
     public function sendEmail()
     {

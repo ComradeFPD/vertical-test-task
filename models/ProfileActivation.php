@@ -10,8 +10,11 @@ use Yii;
  */
 class ProfileActivation extends Model
 {
-
+    /**
+     * @var string $email Email пользователя
+     */
     public $email;
+
     /**
      * @inheritdoc
      */
